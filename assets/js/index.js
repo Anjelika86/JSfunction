@@ -40,3 +40,14 @@ const areaOfTriangle = function (base, height) {
 console.log(areaOfTriangle(2, 4));
 let s = areaOfTriangle(0, 22);
 console.log(s);
+
+const areaOfRectangle = function (a, b) {
+  if (isNaN(a - b)) {
+    return null;
+  }
+  if (a === b) {
+    return null;
+  }
+  return a * b;
+};
+console.log(areaOfRectangle(3, 5));
