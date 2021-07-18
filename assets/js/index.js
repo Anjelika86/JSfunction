@@ -27,3 +27,16 @@ const checkTriangle = function (a, b, c) {
 };
 
 console.log(checkTriangle(3, 3, 3));
+
+const areaOfTriangle = function (base, height) {
+  if (isNaN(base - height)) {
+    return null;
+  }
+  if (base <= 0 || height <= 0) {
+    return null;
+  }
+  return (base * height) / 2;
+};
+console.log(areaOfTriangle(2, 4));
+let s = areaOfTriangle(0, 22);
+console.log(s);
