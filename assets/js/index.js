@@ -62,3 +62,15 @@ const areaOfRhombus = function (a, h) {
   return a * h;
 };
 console.log(areaOfRhombus(5, 10));
+
+const pi = 3.14;
+const areaSurfaceCylindr = function (radius, height) {
+  if (isNaN(radius - height)) {
+    return null;
+  }
+  if (radius <= 0 || height <= 0) {
+    return null;
+  }
+  return 2 * pi * (radius * radius) + 2 * pi * radius * height;
+};
+console.log(areaSurfaceCylindr(5, 10));
