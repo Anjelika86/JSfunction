@@ -51,3 +51,14 @@ const areaOfRectangle = function (a, b) {
   return a * b;
 };
 console.log(areaOfRectangle(3, 5));
+
+const areaOfRhombus = function (a, h) {
+  if (isNaN(a - h)) {
+    return null;
+  }
+  if (a <= 0 || h <= 0) {
+    return null;
+  }
+  return a * h;
+};
+console.log(areaOfRhombus(5, 10));
