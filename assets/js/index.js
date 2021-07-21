@@ -45,7 +45,7 @@ const areaOfRectangle = function (a, b) {
   if (isNaN(a - b)) {
     return null;
   }
-  if (a === b) {
+  if (a <= 0 || b <= 0) {
     return null;
   }
   return a * b;
